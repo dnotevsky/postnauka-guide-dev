@@ -1,0 +1,38 @@
+.quote
+	position relative
+	margin-bottom 50px
+	padding 66px 0 0 23px
+	
+	@media only screen and (max-width 767px)
+		padding-left 45px
+	
+	&::before
+		content ""
+		width 65px
+		height 47px
+		position absolute
+		top 0
+		left 23px
+		background url(images/quote-icon.png) center center no-repeat
+		
+		@media only screen and (max-width 767px)
+			left 45px
+		
+	&__text
+		margin-bottom 5px
+		font-family "AC Boucle"
+		font-size 2.14rem
+		text-transform uppercase
+		color #333333
+		
+		@media only screen and (max-width 767px)
+			margin-bottom 10px
+			font-size 1.71rem
+		
+	&__author
+		color darken(main_color, 5%)
+		font-family "AC Boucle"
+		font-size 1.28rem
+		text-transform uppercase
+		font-weight bold
+		letter-spacing 1px

@@ -1,0 +1,21 @@
+mixin menu(items)
+	//- .show - меню открыто, .hide - меню скрыто
+	div.menu.hide
+		div.menu__header
+			p.menu__title Содержание курса
+			span.menu__burger
+				span.menu__burger-line
+				span.menu__burger-line
+				span.menu__burger-line
+		div.menu__body
+			ul.menu__list.menu__list_big
+				each item in items
+					li.menu__li_big
+						a.menu__li_big-link(href="#")= item.block
+						ul.menu__list.menu__list_small
+							each li in item.list
+								li.menu__li_small
+									span.menu__li-type= li.type
+									a.menu__li-name(href="#")= li.name
+									span.menu__li-num= "0" + li.num + ""
+	div.menu__wrapper

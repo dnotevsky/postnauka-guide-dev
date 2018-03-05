@@ -1,0 +1,83 @@
+.subscribe
+	margin-bottom 50px
+	padding 28px 29px 15px
+	border-radius 4px
+	font-family 'Source Sans Pro', sans-serif
+	
+	@media only screen and (max-width 767px)
+		display none
+	
+	&__slogan
+		margin-bottom 2px
+		color #fff
+		font-weight 600
+		font-size 1.14rem
+		
+	&__title
+		margin-bottom 12px
+		font-family "AC Boucle"
+		color darken(main_color, 5%)
+		font-size 1.71rem
+		letter-spacing 3px
+		text-transform uppercase
+		font-weight bold
+		
+	&__form
+		margin-bottom 13px
+		display flex
+		justify-content space-between
+		align-items center
+		
+	&__input
+		display block
+		width 100%
+		max-width 220px
+		height 40px
+		padding 0 19px 2px 19px
+		background #fff
+		border 2px solid darken(main_color, 5%)
+		font-weight normal
+		color #333333
+		font-size 1.14rem
+		outline none
+		
+	&__button
+		display block
+		width 100%
+		max-width 200px
+		height 40px
+		line-height 37px
+		background darken(main_color, 5%)
+		cursor pointer
+		border-radius 3px
+		text-align center
+		text-transform uppercase
+		color #333333
+		font-weight 600
+		font-size 1rem
+		letter-spacing 1px
+		border none
+		outline none
+		transition .25s background
+		
+		&:hover
+			background lighten(main_color, 5%)
+			
+		&:active
+			background darken(main_color, 15%)
+		
+		@media only screen and (max-width 1199px)
+			border-radius 0px
+		
+	&__tip
+		color #fff
+		font-size 1rem
+		&_link
+			display inline-block
+			color inherit
+			text-decoration none
+			line-height 1
+			border-bottom 1px solid #fff
+			
+			&:hover
+				color #eb673a

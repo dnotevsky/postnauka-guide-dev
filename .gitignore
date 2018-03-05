@@ -1,0 +1,8 @@
+/node_modules
+/dist
+/.idea
+/SPEC
+
+*.DS_Store
+*.log
+*.config

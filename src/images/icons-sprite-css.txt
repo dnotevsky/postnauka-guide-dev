@@ -1,0 +1,141 @@
+.bg-test {
+    width: 20px; height: 16px;
+    background: url('css_sprites.png') -62px -20px;
+}
+
+x
+.bg-text {
+    width: 14px; height: 20px;
+    background: url('css_sprites.png') -102px -53px;
+}
+
+x
+.bg-tw {
+    width: 16px; height: 14px;
+    background: url('css_sprites.png') -10px -123px;
+}
+
+x
+.bg-tw_gray {
+    width: 16px; height: 14px;
+    background: url('css_sprites.png') -56px -133px;
+}
+
+x
+.bg-video {
+    width: 20px; height: 14px;
+    background: url('css_sprites.png') -20px -99px;
+}
+
+x
+.bg-video_icon {
+    width: 18px; height: 16px;
+    background: url('css_sprites.png') -141px -20px;
+}
+
+x
+.bg-views {
+    width: 15px; height: 10px;
+    background: url('css_sprites.png') -86px -90px;
+}
+
+x
+.bg-views_gray {
+    width: 15px; height: 10px;
+    background: url('css_sprites.png') -20px -167px;
+}
+
+x
+.bg-vk {
+    width: 22px; height: 13px;
+    background: url('css_sprites.png') -46px -50px;
+}
+
+x
+.bg-vk_gray {
+    width: 22px; height: 14px;
+    background: url('css_sprites.png') -102px -20px;
+}
+
+x
+.bg-fb {
+    width: 15px; height: 15px;
+    background: url('css_sprites.png') -134px -81px;
+}
+
+x
+.bg-fb_card {
+    width: 8px; height: 16px;
+    background: url('css_sprites.png') -209px -20px;
+}
+
+x
+.bg-fb_gray {
+    width: 7px; height: 16px;
+    background: url('css_sprites.png') -199px -10px;
+}
+
+x
+.bg-interview {
+    width: 22px; height: 20px;
+    background: url('css_sprites.png') -20px -20px;
+}
+
+x
+.bg-list {
+    width: 16px; height: 20px;
+    background: url('css_sprites.png') -20px -60px;
+}
+
+x
+.bg-lj {
+    width: 15px; height: 15px;
+    background: url('css_sprites.png') -134px -46px;
+}
+
+x
+.bg-mail {
+    width: 16px; height: 10px;
+    background: url('css_sprites.png') -50px -90px;
+}
+
+x
+.bg-ok {
+    width: 10px; height: 18px;
+    background: url('css_sprites.png') -169px -48px;
+}
+
+x
+.bg-ok_gray {
+    width: 10px; height: 18px;
+    background: url('css_sprites.png') -179px -20px;
+}
+
+x
+.bg-shares {
+    width: 12px; height: 14px;
+    background: url('css_sprites.png') -82px -123px;
+}
+
+x
+.bg-shares_gray {
+    width: 12px; height: 14px;
+    background: url('css_sprites.png') -124px -133px;
+}
+
+.bg-vk_cover {
+    width: 18px; height: 11px;
+    background: url('css_sprites.png') -10px -207px;
+}
+
+x
+.bg-ok_cover {
+    width: 10px; height: 17px;
+    background: url('css_sprites.png') -246px -10px;
+}
+
+x
+.bg-tw_cover {
+    width: 14px; height: 12px;
+    background: url('css_sprites.png') -10px -238px;
+}

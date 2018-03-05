@@ -1,0 +1,155 @@
+.menu
+	margin-top 61px
+	width 100%
+	max-width 390px
+	border-radius 4px
+	background #fff
+	color #000
+	font-family 'Source Sans Pro', sans-serif
+	
+	@media only screen and (max-width 1023px)
+		max-width 100%
+		margin 20px 0
+	@media only screen and (max-width 767px)
+		margin 0
+		border-radius 0px
+	
+	/*темная обложка за открытым меню(show)*/
+	&__wrapper
+		position fixed
+		content ""
+		left 0
+		top 0
+		width 100vw
+		height 100vh
+		background rgba(0,0,0,.4)
+		z-index 10
+	
+	&.hide
+		height 40px
+		overflow hidden
+		.menu__burger
+			border-radius 0 4px 0 0
+			background #e5e5e5
+			@media only screen and (max-width 767px)
+				border-radius 0px
+				background main_color
+			&-line
+				position absolute
+				left 50%
+				transform translate(-50%)
+				width 24px
+				height 2px
+				background #000
+				@media only screen and (max-width 767px)
+					background #fff
+				&:nth-child(1)
+					top 12px
+				&:nth-child(2)
+					top 19px
+				&:nth-child(3)
+					top 26px
+		& + .menu__wrapper
+			display none
+					
+	&.show
+		position fixed
+		top 0
+		z-index 20
+		height auto
+		padding-top 18px
+		@media only screen and (max-width 1023px)
+			position static
+			max-width 100%
+		.menu__burger
+			right 10px
+			background transparent
+			&-line
+				position absolute
+				left 0
+				top 0
+				width 27px
+				height 2px
+				background #000
+				&:nth-child(1)
+					left -5px
+					transform translateY(21px) rotate(-45deg)
+				&:nth-child(2)
+					opacity 0
+				&:nth-child(3)
+					left -5px
+					transform translateY(21px) rotate(45deg)
+		& + .menu__wrapper
+			display block
+			@media only screen and (max-width 1023px)
+				display none
+					
+		.menu__header
+			padding-left 23px
+	
+	&__header
+		position relative
+		margin-bottom 15px
+		height 40px
+		padding-left 24px
+		line-height 45px
+		cursor pointer
+		
+	&__title
+		text-transform uppercase
+		font-family "AC Boucle"
+		font-size 1.71rem
+		letter-spacing 4px
+		font-weight bold
+		
+	&__burger
+		position absolute
+		right 0
+		top 0
+		width 40px
+		height 40px
+	
+	&__body
+		padding 0 24px 25px
+		
+	&__list
+		list-style none
+		
+	&__li
+		&_big
+			margin-bottom 8px
+			font-weight 600
+			font-size 1.28rem
+			&-link
+				color #000
+				text-decoration none
+		&_small
+			position relative
+			margin-top 7px
+			padding-left 25px
+		&-type
+			display block
+			margin-bottom -2px
+			color #666666
+			font-size .85rem
+			text-transform uppercase
+			letter-spacing 2px
+		&-name
+			font-size 1.14rem
+			text-decoration none
+			color #000
+			font-weight normal
+			&:hover
+				&+.menu__li-num
+					color lighten(main_color, 5%)
+					
+			&:active
+				&+.menu__li-num
+					color darken(main_color, 15%)
+		&-num
+			position absolute
+			left 3px
+			top 17px
+			font-family "AC Boucle"
+			font-size 1.1rem
+			letter-spacing .5px

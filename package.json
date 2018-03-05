@@ -1,0 +1,45 @@
+{
+  "name": "page-helper",
+  "version": "1.0.0",
+  "description": "Easy to develop new pages with Webpack 3, Stylus, Pug",
+  "main": "index.js",
+  "scripts": {
+    "develop": "webpack-dev-server --port 8080 --hot --host localhost",
+    "production": "npm run clean && webpack",
+    "clean": "rimraf ./dist/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Kompaneytsev/page-helper.git"
+  },
+  "keywords": [
+    "webpack 4",
+    "stylus",
+    "pug"
+  ],
+  "author": "Alexander Kompaneytsev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kompaneytsev/page-helper/issues"
+  },
+  "homepage": "https://github.com/Kompaneytsev/page-helper#readme",
+  "devDependencies": {
+    "copy-webpack-plugin": "^4.4.2",
+    "css-loader": "^0.28.10",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^2.30.1",
+    "pug": "^2.0.0-rc.4",
+    "pug-loader": "^2.3.0",
+    "rimraf": "^2.6.2",
+    "style-loader": "^0.20.2",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.1.0",
+    "webpack-dev-server": "2.9.2"
+  },
+  "dependencies": {
+    "base64-inline-loader": "^1.1.0"
+  }
+}

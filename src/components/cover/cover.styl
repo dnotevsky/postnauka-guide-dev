@@ -1,0 +1,244 @@
+.cover
+	position relative
+	padding 30px 0 27px
+	overflow hidden
+	background-position left top
+	background-repeat no-repeat
+	background-size cover
+	border-bottom 10px solid main_color
+	font-family 'Source Sans Pro', sans-serif
+	
+	@media only screen and (max-width 1023px)
+		background-position left top
+		background-repeat no-repeat
+		background-size cover
+		
+	@media only screen and (max-width 767px)
+		height 100vh
+		min-height 532px
+		background-position 60%
+	
+	&::after
+		position absolute
+		content ""
+		left -2px
+		top 365px
+		width 386px
+		height 2px
+		background main_color
+		border-radius 2px
+		
+		@media only screen and (max-width 767px)
+			display none
+		
+	&__spec-project
+		margin-bottom 7px
+		font-weight 600
+		font-size 1rem
+		color #fff
+		text-transform uppercase
+		letter-spacing 2px
+		
+		@media only screen and (max-width 767px)
+			font-size .85rem
+		
+		&-title
+			margin-bottom 95px
+			color main_color
+			font-size 2.14rem
+			text-transform uppercase
+			font-family "AC Boucle"
+			letter-spacing 4px
+			font-weight bold
+			
+			@media only screen and (max-width 767px)
+				font-size 1.71rem
+			
+	&__course
+		margin-bottom 10px
+		display inline-block
+		height 30px
+		padding 0 14px 0 15px
+		line-height 30px
+		background main_color
+		border-radius 3px
+		text-align center
+		font-weight 600
+		font-size 1rem
+		color #fff
+		text-transform uppercase
+		letter-spacing 2px
+		
+	&__title
+		margin-bottom 35px
+		width 100%
+		max-width 620px
+		color #fff
+		text-transform uppercase
+		font-family "AC Boucle"
+		letter-spacing 4px
+		font-weight normal
+		font-size 3.85rem
+		line-height 1.2
+		
+		@media only screen and (max-width 767px)
+			max-width 326px
+			position relative
+			padding-right 20px
+			font-size 2.57rem
+			
+			&::after
+				position absolute
+				content ""
+				left -22px
+				bottom -12px
+				width 190px
+				height 2px
+				background main_color
+				border-radius 2px
+		
+	&__description
+		margin-bottom 130px
+		width 100%
+		max-width 480px
+		font-weight normal
+		color #fff
+		font-size 1.28rem
+		
+		@media only screen and (max-width 767px)
+			margin-bottom 10px
+			padding-right 47px
+			font-size 1.14rem
+		
+	&__bottom-block
+		display flex
+		width 100%
+		max-width 570px
+		justify-content space-between
+		align-items center
+		
+		@media only screen and (max-width 767px)
+			padding-right 43px
+			padding-left 10px
+			position absolute
+			bottom 27px
+			right 0
+			width 100%
+		
+	&__socials
+		@media only screen and (max-width 767px)
+			order 1
+
+		&-text
+			margin-bottom 14px
+			font-weight 600
+			font-size 1rem
+			color #fff
+			text-transform uppercase
+			letter-spacing 2px
+			
+			@media only screen and (max-width 767px)
+				display none
+
+		&-block
+			display flex
+			@media only screen and (max-width 767px)
+				position absolute
+				bottom -25px
+				right 0
+				flex-direction column
+
+		&-button
+			position relative
+			margin-right -2px
+			height 40px
+			width 40px
+			border 2px solid #fff
+			transition .25s all
+			
+			&:hover
+				&::after
+					filter invert(28%) sepia(85%) hue-rotate(-331deg) saturate(4) brightness(80%)
+					z-index 3
+				
+			&:active
+				&::after
+					filter invert(28%) sepia(85%) hue-rotate(-331deg) saturate(4) brightness(70%)
+					z-index 3
+			
+			@media only screen and (max-width 767px)
+				margin-right 0
+				margin-bottom -2px
+
+			&::after
+				content ""
+				position absolute
+				top 50%
+				left 50%
+				transform translate(-50%, -50%)
+				background url(images/icons.png) center center no-repeat
+				
+			&_fb
+				&::after
+					width 16px
+					height 16px
+					background-position -143px -90px
+			&_vk
+				&::after
+					width 18px
+					height 12px
+					background-position -10px -207px
+			&_tw
+				&::after
+					width 14px
+					height 12px
+					background-position -10px -238px
+			&_lj
+				&::after
+					width 16px
+					height 16px
+					background-position -143px -55px
+			&_ok
+				&::after
+					width 10px
+					height 18px
+					background-position -179px -58px
+			&_mail
+				&::after
+					width 16px
+					height 10px
+					background-position -60px -100px
+					
+	&__materials
+		margin-top 28px
+		color #fff
+		font-size 1.14rem
+		
+		@media only screen and (max-width 359px)
+			font-size 1rem
+		
+	&__views
+		margin-top 28px
+		color #fff
+		font-size 1.14rem
+		&::before
+			margin-right 4px
+			content ""
+			display inline-block
+			width 16px
+			height 10px
+			background url(images/icons-sprite.png) -85px -90px
+		
+	&__shares
+		margin-top 28px
+		color #fff
+		font-size 1.14rem
+		&::before
+			margin-right 7px
+			position relative
+			top 2px
+			content ""
+			display inline-block
+			width 12px
+			height 14px
+			background url(images/icons-sprite.png) -82px -123px

@@ -1,0 +1,109 @@
+/*Переменные*/
+main_color = #a2bf16
+background_color = #edf1f3
+
+/*Reset стилей*/
+*
+	margin 0
+	padding 0
+	box-sizing border-box
+	font-family inherit
+	font-size inherit
+
+/*Общие стили*/
+html
+	font-size 14px
+	
+.main-container
+	padding 0 20px
+	width 100%
+	max-width 1240px
+	margin 0 auto
+	@media only screen and (max-width 767px)
+		padding 0 10px
+	
+/*Стили для page*/
+.main-content
+	background background_color
+	
+.mobile-menu
+	display none
+	background background_color
+	padding 2px 0
+	@media only screen and (max-width 767px)
+		display block
+	
+.main-row
+	display flex
+	padding 45px 0 50px
+	align-items flex-start
+	
+	@media only screen and (max-width 1023px)
+		flex-wrap wrap
+		justify-content center
+		padding-top 0
+	
+.left
+	flex-basis 791px
+	margin-right 18px
+	
+	@media only screen and (max-width 1023px)
+		order 1
+	@media only screen and (max-width 767px)
+		margin-right 0
+		max-width 100%
+		
+.right
+	flex-basis 390px
+	@media only screen and (max-width 1023px)
+		flex-basis 100%
+		width 100%
+		max-width 795px
+	@media only screen and (max-width 767px)
+		display none
+	
+.theme_block
+	position relative
+	margin-bottom 40px
+	max-width 795px
+	padding-left 52px
+	@media only screen and (max-width 767px)
+		margin-bottom 0
+		padding 40px 0 26px
+		z-index 2
+		&_sm-dn
+			display none
+			
+		&::before
+			content ""
+			position absolute
+			left 32px
+			top 72px
+			height 5px
+			width 5px
+			background main_color
+			border-radius 50%
+			z-index 2
+			
+	&::after
+		content ""
+		position absolute
+		left 16px
+		top 100px
+		height calc(100% - 87px - 415px)
+		width 3px
+		background #cccccc
+		@media only screen and (max-width 767px)
+			left 33px
+			top 73px
+			height calc(100% - 87px - 300px)
+	
+	&__heading
+		margin 0 0 25px -52px
+		font-family "Source Sans Pro"
+		font-weight 600
+		font-size 2.14rem
+		color #333333
+		@media only screen and (max-width 767px)
+			margin-left 0
+			font-size 1.71rem

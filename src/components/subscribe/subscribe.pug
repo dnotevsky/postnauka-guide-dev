@@ -1,0 +1,12 @@
+mixin subscribe
+	div.subscribe(style="background:url(images/subscribe.gif) center center no-repeat")
+		p.subscribe__slogan Подпишитесь на новости проекта
+		p.subscribe__title «Мастерская будущего»
+		form.subscribe__form
+			input.subscribe__input(placeholder="Вас зовут", required="true")
+			input.subscribe__input(placeholder="Электронная почта", required="true")
+			button.subscribe__button(type="submit") Подписаться
+		p.subscribe__tip Нажимая кнопку, вы даете 
+			a.subscribe__tip_link(href="#") согласие на обработку
+			=' '
+			span своих персональных данных.
